@@ -1,54 +1,8 @@
-// // Author: Kory
-// // Last Updated: 04/28/22
+// Author: Kory
+// Created: 04/29/22
+// Last Updated: 04/30/22
 
-// // function getWeather(category) {
-// //     fetch(`https://api.chucknorris.io/jokes/random?category=${category}`)
-// //     .then(r => r.json())
-// //     .then(res => console.log(res.value));
-// //   }
-
-// // function ageCheck(age){
-// //     if (age >= 21){
-// //         console.log("You can buy alcohol")
-// //     } else {
-// //         console.log("You are not old enough")
-// //     }
-// // }
-
-// // ageCheck(20);
-
-// for (let i = 0; i < 5; i++) {
-//     console.log("Do it again")
-// }
-
-// let i = 0;
-// while(i < 5;){
-//     console.log("Let me out!!")
-//     i++
-// }
-
-// // Do while will run at least once
-
-// let n = 1
-// do {
-//     console.log(n)
-//     n++
-// } while (n < 5);
-
-// const array1 = ['a', 'b', 'c'];
-// console.log(array1.length);
-
-// for (let i = 0; i , array1.length; i++){
-//     console.log(array1[i])
-// }
-
-// for (const element of array1){
-//     console.log()
-// }
-
-// Javascript Modules
-
-// Change Link color when mouse hovers
+// Changes color of links when mouse hovers over link
 
 let link1 = document.querySelector('.link1')
 
@@ -80,77 +34,6 @@ function changeLinkBack2(){
     link2.style.color = "blue"
 }
 
-// links.addEventListener('mouseout', changeLink);
-
-// function changeLink(){
-//     links.style.color = "blue"
-// }
-
-// Async vs Sync
-
-// Sync = code running line by line. (Cannot do line 147 until 146 is done)
-
-// Async is when while code is running on one line, it can still proceed running other lines
-
-// Promises
-
-// "Producing Code" (May take some time)
-// let myPromise = new Promise(function(myResolve, myReject) {
-
-//     myResolve(); // when successful
-//     myReject();  // when error
-//   });
-  
-//   // "Consuming Code" (Must wait for a fulfilled Promise)
-//   myPromise.then(
-//     function(value) { /* code if successful */ } 
-//   )
-//   .catch(
-//     function(error) { /* code if some error */ }
-//   );
-
-// //  Youtube Example
-
-// let p = new Promise(function(resolve, reject){
-//     let a = 1 + 2
-//     if (a == 2){
-//         resolve("Success!")
-//     } else {
-//         reject("failure!")
-//     }
-// })
-
-// p.then(function(message){
-//     console.log("the operation was a "+ message)
-// }).catch(function(message){
-//     console.log("the operation was a " + message)
-// });
-
-
-// //   Async and Await
-
-//   async function myAsync() {
-//     let myPromise = new Promise(function(myResolve, myReject) {
-//       setTimeout(function() { myResolve("HII x2 !!"); }, 3000);
-//     });
-  
-//     let message = await myPromise;
-//     console.log(message);
-//   }
-
-  
-//   myAsync();
-
-// Fetch API
-// provides us with a way to interact with and retrieve resources from across the network and from external web services
-// promise based
-
-// function getJoke(category) {
-//     fetch(`https://api.chucknorris.io/jokes/random?category=${category}`)
-//     .then(r => r.json())
-//     .then(res => console.log(res.value));
-//   }
-
 // Successful OpenWeather API console.log
 
 // let city = "Northridge";
@@ -163,6 +46,9 @@ function changeLinkBack2(){
 //     .then(json => console.log(json))    //print data to console
 //     .catch(err => console.log('Request Failed', err)); // Catch errors
 
+
+
+// Public API Call using async function
 
 let searchBtn = document.querySelector('#search-button');
 searchBtn.addEventListener('click', fetchResults);
